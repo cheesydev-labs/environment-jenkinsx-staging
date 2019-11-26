@@ -1,0 +1,37 @@
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-vnwxq[0m
+{"level":"warn","ts":1574812326.8614867,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574812326.8634176,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-fpv9z[0m
+{"level":"warn","ts":1574812328.397843,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1574812328.4132073,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-cheesydev-labs-environment-jenk-h9ttz[0m
+{"level":"warn","ts":1574812334.6311457,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1574812334.9743905,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cheesydev-labs/environment-jenkinsx-staging.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:6e71cbcfa40fe0bc38c4cf54807099ed08303aed
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mcheesydev-labs-environment-jenk-xpqww-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 1
+Namespace **-staging created 
+Ignoring templates/.gitignore
+Ignoring templates/wildcardcert-secret.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+
